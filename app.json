@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "news_noticias",
-    "slug": "news_noticias",
+    "name": "Globo News",
+    "slug": "globo-news",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.globonews.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +17,25 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.globonews.app",
+      "versionCode": 1
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-router"
+    ],
+    "scheme": "globonews",
+    "owner": "bielzin1607",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "64230fd1-03c8-4c1c-a6ad-8fc58a025b76"
+      }
     }
   }
 }
